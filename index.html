@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramuzone - Online Shopping</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: #131921;
+            color: white;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #ff9900;
+        }
+
+        .search-box input {
+            width: 350px;
+            padding: 8px;
+            border-radius: 3px;
+            border: none;
+        }
+
+        /* Banner */
+        .banner {
+            width: 100%;
+            height: 330px;
+            background-image: url('https://i.postimg.cc/0Np7tbZV/banner-electronics.jpg');
+            background-size: cover;
+        }
+
+        /* Product Grid */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 6px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            width: 100%;
+            height: 180px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        .product h3 {
+            margin: 10px 0 5px;
+        }
+
+        .footer {
+            background: #131921;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="logo">RAMUZONE</div>
+        <div class="search-box">
+            <input type="text" placeholder="Search for products...">
+        </div>
+    </div>
+
+    <!-- BANNER -->
+    <div class="banner"></div>
+
+    <!-- PRODUCTS SECTION -->
+    <div class="products">
+
+        <div class="product">
+            <img src="https://i.postimg.cc/3wR9n7mh/headphones.png">
+            <h3>Wireless Headphones</h3>
+            <p>₹999</p>
+        </div>
+
+        <div class="product">
+            <img src="https://i.postimg.cc/mk01PSHq/smartwatch.png">
+            <h3>Smart Watch</h3>
+            <p>₹1,499</p>
+        </div>
+
+        <div class="product">
+            <img src="https://i.postimg.cc/4xv0yYgr/speaker.png">
+            <h3>Bluetooth Speaker</h3>
+            <p>₹799</p>
+        </div>
+
+        <div class="product">
+            <img src="https://i.postimg.cc/K8LZV4yC/backpack.png">
+            <h3>Backpack</h3>
+            <p>₹699</p>
+        </div>
+
+        <div class="product">
+            <img src="https://i.postimg.cc/fb8sW6N5/laptop.png">
+            <h3>Laptop</h3>
+            <p>₹39,999</p>
+        </div>
+
+        <div class="product">
+            <img src="https://i.postimg.cc/J0727j9q/phone.png">
+            <h3>Smartphone</h3>
+            <p>₹12,499</p>
+        </div>
+
+        <div class="product">
+            <img src="https://i.postimg.cc/sxrxq4pP/camera.png">
+            <h3>Digital Camera</h3>
+            <p>₹8,999</p>
+        </div>
+
+        <div class="product">
+            <img src="https://i.postimg.cc/RVtS9Ch0/shoes.png">
+            <h3>Running Shoes</h3>
+            <p>₹1,299</p>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        © 2025 Ramuzone.com | Designed by Madhav Krishna
+    </div>
+
+</body>
+</html>
